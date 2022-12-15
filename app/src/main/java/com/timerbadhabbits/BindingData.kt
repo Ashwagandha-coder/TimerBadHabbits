@@ -1,7 +1,6 @@
 package com.timerbadhabbits
 
 import android.content.Context
-import android.content.SharedPreferences
 import com.timerbadhabbits.databinding.ActivityMainBinding
 
 
@@ -9,7 +8,7 @@ class BindingData(private val binding: ActivityMainBinding) {
 
     fun action(context: Context) {
 
-        val sharedPref = initSharedPref(context)
+        val sharedPref = context.getSharedPreferences("main",Context.MODE_PRIVATE)
         val time = sharedPref.getLong("time",-1)
 
         if (time == -1L) {
@@ -26,13 +25,12 @@ class BindingData(private val binding: ActivityMainBinding) {
 
     private fun paymentTime(time: Long): Long {
 
-        val diff = System.currentTimeMillis() - time/1000
-        val days = diff / (24 * 3600)
-        return days
+        val diff = (System.currentTimeMillis() - time) / 1000
+        return diff / (24 * 3600)
 
     }
 
-    private fun initSharedPref(context: Context): SharedPreferences = context.getSharedPreferences("main",Context.MODE_PRIVATE)
+//    private fun initSharedPref(context: Context): SharedPreferences = context.getSharedPreferences("main",Context.MODE_PRIVATE)
 
 
 
