@@ -30,7 +30,6 @@ class BindingData(private val binding: ActivityMainBinding) {
 
     }
 
-//    private fun initSharedPref(context: Context): SharedPreferences = context.getSharedPreferences("main",Context.MODE_PRIVATE)
 
 
 
