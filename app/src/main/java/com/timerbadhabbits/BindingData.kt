@@ -21,6 +21,8 @@ class BindingData(private val binding: ActivityMainBinding) {
 
         }
 
+        TODO("Добавить кнопку")
+
     }
 
     private fun paymentTime(time: Long): Long {
