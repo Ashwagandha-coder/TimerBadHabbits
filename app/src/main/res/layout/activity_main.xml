@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvMain"
+        android:id="@+id/tvNumberText"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
 
 
     <TextView
-        android:id="@+id/tvNumberText"
+        android:id="@+id/tvBelowText"
         android:text="days without bad habits"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
