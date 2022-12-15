@@ -2,12 +2,11 @@ package com.timerbadhabbits
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.timerbadhabbits.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
     private val binding by lazy {  }
-
     private val bindingData by lazy {  }
 
 
@@ -21,15 +20,10 @@ class MainActivity : AppCompatActivity() {
     private fun initBinding() {
 
 
-
-
-
     }
 
 
     private fun initBindingData() {
-
-
 
 
 
