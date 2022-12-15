@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">TimerBadHabbits</string>
+    <string name="app_name">BadHabits</string>
     <string name="tvMainText">day(s) without bad habits</string>
 </resources>
