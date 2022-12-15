@@ -27,9 +27,7 @@ class BindingData(private val binding: ActivityMainBinding) {
     private fun paymentTime(time: Long): Long {
 
         val diff = System.currentTimeMillis() - time/1000
-
         val days = diff / (24 * 3600)
-
         return days
 
     }
