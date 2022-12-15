@@ -7,6 +7,12 @@ android {
     namespace 'com.timerbadhabbits'
     compileSdk 32
 
+    buildFeatures {
+
+        viewBinding true
+
+    }
+
     defaultConfig {
         applicationId "com.timerbadhabbits"
         minSdk 21
