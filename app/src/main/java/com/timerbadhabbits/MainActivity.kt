@@ -2,12 +2,16 @@ package com.timerbadhabbits
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.timerbadhabbits.databinding.ActivityMainBinding
 
+/**
+ * Главный Экран
+ */
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding by lazy {  }
-    private val bindingData by lazy {  }
+    private val binding by lazy { initBinding() }
+    private val bindingData by lazy { initBindingData() }
 
 
 
@@ -17,17 +21,8 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun initBinding() {
-
-
-    }
-
-
-    private fun initBindingData() {
-
-
-
-    }
+    private fun initBinding() = ActivityMainBinding.inflate(layoutInflater)
+    private fun initBindingData() = BindingData(baseContext,binding)
 
 
 
